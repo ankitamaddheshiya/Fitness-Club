@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #nav {
+            display: flex;
+            width: 100%;
+            height: 130px;
+        }
+
+        .f1 {
+            width: 20%;
+        }
+
+        .f1 img {
+            height: 130px;
+            width: 60%;
+            margin-left: 80px;
+        }
+
+        .f2 {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .f3 {
+            width: 35%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 60px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .f3 img {
+            height: 20px;
+        }
+
+        .f3 span {
+            color: rgb(51, 8, 179);
+        }
+        #middle h1{
+           font: 1em sans-serif;
+            color: black;
+            font-size: 40px;
+        }
+        #middle{
+            height: 360px;
+            background-color: rgb(187, 230, 240);
+            font-family: sans-serif;
+            color: grey;
+            display: flex;
+            justify-content: space-around;
+            word-spacing: 6px;
+            padding: 30px;
+          }
+        #middle img{
+            width: 87%;
+          }
+        #middle>div{
+          margin-left: 150px;
+        }
+        #middle-2{
+            display: flex;
+            justify-content: space-evenly;
+            height: 350px;
+            text-align: center;
+            margin: 10px;
+            font-family: sans-serif;
+            font-size: 17px;
+            
+            
+        }
+        #middle-2>div:nth-child(1){
+            width: 49%;
+            background-color: rgb(196, 237, 252);
+            padding-top: 30px;
+        }
+        #middle-2>div:nth-child(2){
+            width: 49%;
+            background-color: rgb(219, 227, 229);
+            padding-top: 30px;
+        }
+        #middle-2>div button{
+            width: 30%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            font-size: 15px;
+            border-radius: 5px;
+           
+        }
+        #footer {
+            display: flex;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            justify-content: space-between;
+            height: 400px;
+            font-size: 12px;
+            margin-top: 100px;
+        }
+        #footer>div:nth-child(1) {
+            width: 40%;
+        }
+        #footer>div li {
+            list-style: none;
+            margin: 25px;
+            font-family: sans-serif;
+        }
+        #footer>div {
+            margin-top: 50px;
+        }
+        #footer img {
+            width: 40%;
+            height: 130px;
+            margin-left: 50px;
+        }
+
+        #footer-1 {
+            background-color: black;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+       #footer-1 img {
+            width: 15%;
+        } 
+        #footer-1>p {
+            width: 100%;
+        }
+
+        #footer-1 a {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div class="f1">
+            <div>
+                <a href="index.html"><img src="CLUB (2).png" alt=""></a>
+            </div>
+        </div>
+        <div class="f2">
+            <div>WORKOUTS</div>
+            <div>PROGRAMS</div>
+            <div>HEALTHY LIVING</div>
+            <div>COMMUNITY</div>
+            <div>ABOUT</div>
+            <div>STORE</div>
+            <div>MAMBERSHIP</div>
+        </div>
+        <div class="f3">
+            <div><span>Hi! Sign In<br></span>MY FITNESS</div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB7CAMAAACBxRQ0AAAAY1BMVEX///8AAADv7+/6+vrS0tLV1dXk5OTf39/Y2Ni4uLjc3Nz39/ekpKQzMzMZGRny8vJvb2+SkpIlJSXLy8sPDw+Dg4Oenp5OTk5WVlaurq4dHR1kZGRBQUHBwcGMjIwrKyt5eXkkGQErAAAFC0lEQVRogcVb2aKqMAxkc0FF2RRBAf//Ky8e9VxlkjZtwTPPLWPTZJom1fOECFftLkurfl/6ftkk5+OpXiylk10QFKeq8RFln8arcFbmNk0I4hf2VTYb//qoYn7iXB9moG7PeuYHuqn3P+6l1HfcpqQvribUP6sPJqJepqbUA/p6Eu56b8E94OJu+8Bm2Q+UsSN3kVtzDzg6Rf3OhXrA1cH0N0du328iS+rQfrvfUFhxbyfh9v3Whnwibqu1XwSfzZNEIgLG7Gpfq251EYRPrOLsoozIcm3GrYqx8265HY8PItV5mxsdsxH/nW7DzAli/tC9GHAfWCuelKdVxNKf5OScs+nlMuKML3Y6ZsMrzuAfONGTE+EBv6KN3oGX0YjozOMom02ri/x8DOhdE6l8QU5diLk9RiSukpmUy+xXJtyed7S0XUxMawy5Pa8jvpJrZ4XUwo1s/gBleW1O2drZC7Al9OaqkwliTmbBPfg8sQrN0b4mfq8VN2lDjcQTbmrsbC8QeqHUyACvZJ0ttxdgoqHcQTRV73DjRZlXuhxayuAsBBwwbBUaG8DoxOmqj8ejwu4o63Zh9kIA1ZuKHwybVDreNCF4Gv6D1XisSe5FAXNBVme2YCXXG/4WnIjdxxX8TufiBtidtSVEucI9hIBPJtxIiAxh3qXAEozJxW42Huha1xgAes25O+ibRRIxBhzRXAIPkebOjdbkAghMNAE5+NGOGVjOQF5Lycfj9OmmHpAMS8nZmPwGef9N8vGe7ycgF+85nCsTkIu9HY6gCcghReDiHNRogoYBqCYn2XD+WRUPPwGVAk6ywUQuqesDWxAuLkUAz3TNoojrV8kVVxbjkY2wDMMDjMnmJ0uwkW21/BdQnrmxQyHWXFMZvCfzKSnExdWxNwlepLAl1mPs+gQvhKAcPX9TXMGl9uxEjneGm2I0JFJuLoeXXtUtBDIup1DHhSuuap63geEuu45lUOVS0EOs60FkOVF9EcDYsBb4ED+lqXsfQOR837A98wJRjNIVl4ii6dXqrkrYUJsf4M1ucBOLZjBVOE+1s6iKrXktbkO9sdCXE6mlG9eFiGKiTDLIQr3Z8YZn8x2SjDAg+zupwb4XJLfMepSfDkeMOJWl50ulku4O9bI6xYFrATeithxRlXqaXpDStYqnRDLbUU2eH+w0O7/BM/kdsrWTHv9ju5Pi50e6hv9elB2E/GOo/BaRiV1Qq1f9mCwqMS1VzxGuxzb42P7DaneRPRvLRacU375//oD0uIvjto3j7HYh45qBqGVDNdgmwZ+yy55vzMUue7JEN7PdIfP5tdHLRzn2IrUJxE8+DSFTWrxGTAOZ0haCl7YW2MvK6QdW6JVIarX05MJbYCFQ7RHKLvAiNXsjbCWEseE7zPRHxuh06v8PFDfHa4OoS1/eRDwF+IC8Nd9KnucN1szewkjDXho0cZaZ7s1zc4k/D/u1Zt9Nag/bdVZx218maYzaoTmaZUr7tv72dIZUI7nVG7pypTkgZEr7icOmiHdZ1nXZqW4jpVjq0pJ5/4qx0bwQtVi7ARaaeJ+gcaliVy9dllXOxd7My/63XqdRG/uCmwgLtc/PS67W+Sk6p0qovM7tMZAECq+zfvcmB6s27i9D7Nkr5y6WPXvylb/5eaTP51/Y8Cewc/itdd8x8nnXV2+G+FDa/LvcH0qbfG+/f9lfa6++ve47nj7fzfFPTj02Vz95v114/wASiDzLhwMflgAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGA3xSOq_Bz09BWrC5qA3jGJF2ANFddjVXnXMPqbP0J36g-jExGH_Mxo3DMiNiWvCr28&usqp=CAU"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div id="middle">
+       <div>
+        <h1>A Membership<br>
+            for Everyone</h1>
+        <p>We believe reliable fitness, nutrition, and wellness<br>
+             content should be accessible to everyone, regardless<br> of income. That’s why full access to premium content<br>
+              and features starts as low as $6.67 per month, and <br>part of the proceeds go toward providing hundreds of
+            <br> our workouts, articles, and recipes absolutely free.</p>
+       </div>
+       <div>
+        <img src="https://cloudfront.fitnessblender.com/assets/img/memberships/memberships-720.webp" alt="">
+       </div>
+    </div>
+    <div id="middle-2">
+        <div>
+            <h1>FB Plus</h1>
+            <p>Get exclusive content and <br>
+                access to programs and challenges, with advanced features to help you reach <br>
+                and maintain your goals.</p>
+            <button>JOIN WITH PLUS</button>
+        </div>
+        <div>
+            <h1>Free Membership</h1>
+            <p>Enjoy hundreds of workout videos, articles, and<br>
+                 recipes, with new content every week. No strings<br> 
+                 attached, no credit card required.</p>
+            <button>JOIN FOR FREE</button>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div>
+         <img src="CLUB (3).png" alt="">
+
+        </div>
+        <div>
+           <ul>
+               <li>WORKOUTS</li>
+               <li>WORKOUT VIDEOS</li> 
+               <li>PROGRAMS</li>
+               <li>WORKOUT PROGRAMS</li>
+               <li>MEAL PLANS</li>
+               <li> MEAL PLANS</li>
+                <li>PILOT PROGRAMS</li>
+               <li>ROUTINES</li>
+             </ul>
+        </div>
+        <div>
+           <ul>
+             <li>HEALTHY LIVING</li>
+             <li> FITNESS</li>
+             <li>  HEALTH</li>
+             <li> NUTRITION</li>
+             <li>HEALTHY RECIPES</li>
+             <li>  EXPERTS</li>
+           </ul>
+        </div>
+        <div>
+           <ul>
+             <li>ABOUT</li>
+             <li>  CAREERS</li>
+             <li> TUTORIALS</li>
+             <li> OUR TEAM</li>
+             <li> B2B OPTIONS</li>
+         </ul>
+        </div>
+        <div>
+         <ul>
+             <li>MEMBERSHIP</li>
+             <li> FB PLUS</li>
+             <li> COMMUNITY</li>
+             <li>BLOG</li>
+             <li>  CONTACT US</li>
+             <li> FAQ</li>
+             <li>STORE</li>
+         </ul>
+        </div>
+</div>
+<div>
+ <div id="footer-1">
+     <p>Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy</p>
+     <a href="https://www.youtube.com/user/FitnessBlender"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO9S7pjbQ6fDKp1a0W1QEn2wWfOeCQEx_s3b5qotX0LGLnCZ_XpcEEsNVWCcNZU5U2Ujs&usqp=CAU"></a>
+     <a href="https://www.facebook.com/fitnessblender/"><img src="https://th.bing.com/th?q=Instagram+Icon+Black+White&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"></a>
+     <a href="https://www.instagram.com/fitnessblender/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAYFBMVEX///8AAACtra3a2tqTk5PExMTW1taPj49HR0ff3993d3fn5+fPz8+qqqpaWlq6urr29vYsLCw7OztsbGw1NTWzs7NgYGAgICAKCgpPT099fX2JiYknJycZGRmcnJzu7u4vMVlPAAAC+UlEQVRoge2a2XaiQBCG6YRFgyxREUEzef+3HJHjBAWq/uolfTH9X3pO8wnVXUtXRVFQUFBQUJBL5WnSFEXRJGn+a8zvKj6pZ5Vx5ZyfZK1aVntJamfYXf+5gh117XcusHW1IbGjNpXtF6+LI8AddCysshuUe2c31rg58p2fvvnWDjgWcgfFFrjbvQZYqb3xazdnLbBSZ0NrZ5rcQZkJ+GAAVuqgD371z1KddMGdIVipzs8bDyp1wGY2fkjD1ia7eirxDm8sgZUSnuutrgOZ6yzzZnouc1l7CVgnSKxLED622BM3xftkEZEp4ekhFI+PL0kXQd6g4AoBzzwjlR2C+7tGUp+5X6TIRyw3KwDw19x0ZEZcWHvlP/N1JBl6acTK7cJupauACiAjG3sp8NJkYHvvAPDSx44YI/GFzwdCTiYLklN3F+Ppew5cXxFy+rMA9HfqypET6DETr/kGkp++05IuzsgXhrxWmJuTWxqcY0/RITMRCwoWmmTamYApwYSMePlRdIJQcsvb+KZs8uF2WTyK3SF07s3+8fWkig80jsjf/KmgwPzWXiW/83kytblTfTIQadK1tRHiO1fJwHmk/Cdf06ySgXKIygP5w7lKBjwBlYwZkIG47ogMXDBQZN5YX+VN3aQ8rLrhl/IEFJ+UnbG8QDNikHubP88mZOo8g+FZk0wGaKdkCuyRzMZnAzIdn+U5CU6mcxJ/eZi/3NNfvu2wxuCuIf3VVRFUS2qQPzlw1Dsis/UzdmegQQaapcg9iZyMXAMizkRORu6GkPswMXkPXQIC1aGYDN0BIi8tJYP3noClpWTEynex21tIxhtmbMQSkgUjH1yCICOL2uBM70ZEFvVuuH7VpMZgyxJhv4p54OHjoZ6tp+B9/ZCtlpVG591bL9ZO/1mz6+6t5+5xzsDjbIXHeRKTGRrxOX6Vt7mhyN+s1E259HjZmg+7qRLNxBlbeKr6DTW35TnAyN/s412e5j1HeZpxHeVprveffMwyBwUFBQX9n/oLNz4tov7mpLsAAAAASUVORK5CYII="></a>
+     <a href="https://twitter.com/FitnessBlender"><img src="https://www.bing.com/th?id=OIP.l-F_aSUNT7Md4aR1KiO1RQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></a>
+  </div>
+
+</body>
+</html>
