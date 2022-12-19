@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity=
+"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <style>
         body{
            padding: 0;
@@ -16,6 +21,7 @@
           grid-template-columns: repeat(4,1fr);
           gap: 10px;
           margin: auto;
+          font-size: 13px;
         
         }
         #product-container div{
@@ -137,6 +143,35 @@
         #footer-1 a {
             width: 10%;
         }
+        img{
+        width: 100%;
+        border-radius: 5%;
+    }
+    #h1{
+        margin-left: 30px;
+    }
+    h1 span{
+        color: rgb(105, 105, 219);
+    }
+    ul li{
+        list-style: none;
+    }
+    #btn {
+        color: white;
+        background-color: rgb(71, 71, 197);
+        width: 80%;
+        height: 40px;
+        border-radius: 5px;
+        margin: auto;
+        border: none;
+
+    }
+    #h6{
+        margin-left: 230px;
+    }
+    #btn button{
+      text-decoration: none;
+    }
        
       </style>
 </head>
@@ -157,21 +192,81 @@
             <div>MAMBERSHIP</div>
         </div>
         <div class="f3">
-            <div><span>Hi! Sign In<br></span>MY FITNESS</div>
+          <a href="signin.html"><div><span>Hi! Sign In<br></span>MY FITNESS</div></a>
             <div>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB7CAMAAACBxRQ0AAAAY1BMVEX///8AAADv7+/6+vrS0tLV1dXk5OTf39/Y2Ni4uLjc3Nz39/ekpKQzMzMZGRny8vJvb2+SkpIlJSXLy8sPDw+Dg4Oenp5OTk5WVlaurq4dHR1kZGRBQUHBwcGMjIwrKyt5eXkkGQErAAAFC0lEQVRogcVb2aKqMAxkc0FF2RRBAf//Ky8e9VxlkjZtwTPPLWPTZJom1fOECFftLkurfl/6ftkk5+OpXiylk10QFKeq8RFln8arcFbmNk0I4hf2VTYb//qoYn7iXB9moG7PeuYHuqn3P+6l1HfcpqQvribUP6sPJqJepqbUA/p6Eu56b8E94OJu+8Bm2Q+UsSN3kVtzDzg6Rf3OhXrA1cH0N0du328iS+rQfrvfUFhxbyfh9v3Whnwibqu1XwSfzZNEIgLG7Gpfq251EYRPrOLsoozIcm3GrYqx8265HY8PItV5mxsdsxH/nW7DzAli/tC9GHAfWCuelKdVxNKf5OScs+nlMuKML3Y6ZsMrzuAfONGTE+EBv6KN3oGX0YjozOMom02ri/x8DOhdE6l8QU5diLk9RiSukpmUy+xXJtyed7S0XUxMawy5Pa8jvpJrZ4XUwo1s/gBleW1O2drZC7Al9OaqkwliTmbBPfg8sQrN0b4mfq8VN2lDjcQTbmrsbC8QeqHUyACvZJ0ttxdgoqHcQTRV73DjRZlXuhxayuAsBBwwbBUaG8DoxOmqj8ejwu4o63Zh9kIA1ZuKHwybVDreNCF4Gv6D1XisSe5FAXNBVme2YCXXG/4WnIjdxxX8TufiBtidtSVEucI9hIBPJtxIiAxh3qXAEozJxW42Huha1xgAes25O+ibRRIxBhzRXAIPkebOjdbkAghMNAE5+NGOGVjOQF5Lycfj9OmmHpAMS8nZmPwGef9N8vGe7ycgF+85nCsTkIu9HY6gCcghReDiHNRogoYBqCYn2XD+WRUPPwGVAk6ywUQuqesDWxAuLkUAz3TNoojrV8kVVxbjkY2wDMMDjMnmJ0uwkW21/BdQnrmxQyHWXFMZvCfzKSnExdWxNwlepLAl1mPs+gQvhKAcPX9TXMGl9uxEjneGm2I0JFJuLoeXXtUtBDIup1DHhSuuap63geEuu45lUOVS0EOs60FkOVF9EcDYsBb4ED+lqXsfQOR837A98wJRjNIVl4ii6dXqrkrYUJsf4M1ucBOLZjBVOE+1s6iKrXktbkO9sdCXE6mlG9eFiGKiTDLIQr3Z8YZn8x2SjDAg+zupwb4XJLfMepSfDkeMOJWl50ulku4O9bI6xYFrATeithxRlXqaXpDStYqnRDLbUU2eH+w0O7/BM/kdsrWTHv9ju5Pi50e6hv9elB2E/GOo/BaRiV1Qq1f9mCwqMS1VzxGuxzb42P7DaneRPRvLRacU375//oD0uIvjto3j7HYh45qBqGVDNdgmwZ+yy55vzMUue7JEN7PdIfP5tdHLRzn2IrUJxE8+DSFTWrxGTAOZ0haCl7YW2MvK6QdW6JVIarX05MJbYCFQ7RHKLvAiNXsjbCWEseE7zPRHxuh06v8PFDfHa4OoS1/eRDwF+IC8Nd9KnucN1szewkjDXho0cZaZ7s1zc4k/D/u1Zt9Nag/bdVZx218maYzaoTmaZUr7tv72dIZUI7nVG7pypTkgZEr7icOmiHdZ1nXZqW4jpVjq0pJ5/4qx0bwQtVi7ARaaeJ+gcaliVy9dllXOxd7My/63XqdRG/uCmwgLtc/PS67W+Sk6p0qovM7tMZAECq+zfvcmB6s27i9D7Nkr5y6WPXvylb/5eaTP51/Y8Cewc/itdd8x8nnXV2+G+FDa/LvcH0qbfG+/f9lfa6++ve47nj7fzfFPTj02Vz95v114/wASiDzLhwMflgAAAABJRU5ErkJggg=="
                     alt="">
             </div>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGA3xSOq_Bz09BWrC5qA3jGJF2ANFddjVXnXMPqbP0J36g-jExGH_Mxo3DMiNiWvCr28&usqp=CAU"
-                    alt="">
+              <a href="bag.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGA3xSOq_Bz09BWrC5qA3jGJF2ANFddjVXnXMPqbP0J36g-jExGH_Mxo3DMiNiWvCr28&usqp=CAU"
+                alt=""></a>
             </div>
         </div>
     </div>
+    <select id="filter">
+      <option value="">Filter By Category</option>
+      <option value="">cafe</option>
+      <option value="ethnic">ethnic</option>
+      <option value="fast_food">fast_food</option>
+    </select>
     <div id="product-container">
         <!-- Here Append All the Products  -->
+        <div class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+         
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+             
+                <!-- Add image inside the body of modal -->
+                <div class="modal-body">
+                    <img id="image" src=
+"https://d18zdz9g6n5za7.cloudfront.net/plan/800/800-9958-fb-3-day-3-workouts-per-week-for-2-weeks-91fc.jpg"
+                        alt="Click on button" />
+                </div>
+                <h1 id="h1">FB <span>Plus</span></h1>
+                <ul>
+                    <li>15 days of FB Plus Access</li>
+                    <li>Your selected program</li>
+                    <li>All other FB Plus programs</li>
+                    <li>All the additional content and features of FB Plus</li>
+                </ul>
+          <div class="modal-footer">
+                    <button id="btn">
+                    <a href="cart.html">  BUY PASS</a>
+                </button><br>
+              
+                
+                </div>
+                <h6 id="h6">$7.99</h6>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Adding scripts to use bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity=
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
+    </script>  
       </div>  
-      <div id="footer">
+ </div>
+<div id="footer">
         <div>
          <img src="CLUB (3).png" alt="">
 
@@ -230,13 +325,13 @@
 </body>
 
 <script>
-     let productData = [
+   let productData = [
       {
         image_url:
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9958-fb-3-day-3-workouts-per-week-for-2-weeks-91fc.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -244,7 +339,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9687-fb-just-your-body-2-week-no-equipment-challenge-b0df.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -252,7 +347,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9443-fb-pilates-immersion-2-week-pilates-challenge-for-foundational-strength-and-stability-935e.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -260,7 +355,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8774-fb-reboot-8-week-program-to-jumpstart-your-fitness-routine-83b3.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -268,7 +363,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8622-fb-strong-runner-2-week-strength-focused-challenge-for-improving-running-performance-9544.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -276,7 +371,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8081-fb-kettlebell-blend-2-week-kettlebell-challenge-for-functional-strength-a591.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -284,7 +379,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7776-4-week-fb-benchmark-program-total-body-strength-and-conditioning-bd26.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -308,7 +403,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9958-fb-3-day-3-workouts-per-week-for-2-weeks-91fc.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -324,7 +419,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9443-fb-pilates-immersion-2-week-pilates-challenge-for-foundational-strength-and-stability-935e.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -332,7 +427,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8774-fb-reboot-8-week-program-to-jumpstart-your-fitness-routine-83b3.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -340,7 +435,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8622-fb-strong-runner-2-week-strength-focused-challenge-for-improving-running-performance-9544.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -348,7 +443,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8081-fb-kettlebell-blend-2-week-kettlebell-challenge-for-functional-strength-a591.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -356,7 +451,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7776-4-week-fb-benchmark-program-total-body-strength-and-conditioning-bd26.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -364,7 +459,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-6526-4-week-fbfit-and-fb30-all-exclusive-workout-videos-35-or-45-minutes-a-day-90ff.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -380,7 +475,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9958-fb-3-day-3-workouts-per-week-for-2-weeks-91fc.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -388,7 +483,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9687-fb-just-your-body-2-week-no-equipment-challenge-b0df.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -396,7 +491,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9443-fb-pilates-immersion-2-week-pilates-challenge-for-foundational-strength-and-stability-935e.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -404,7 +499,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8774-fb-reboot-8-week-program-to-jumpstart-your-fitness-routine-83b3.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -412,7 +507,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8622-fb-strong-runner-2-week-strength-focused-challenge-for-improving-running-performance-9544.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -420,7 +515,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8081-fb-kettlebell-blend-2-week-kettlebell-challenge-for-functional-strength-a591.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -428,7 +523,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7776-4-week-fb-benchmark-program-total-body-strength-and-conditioning-bd26.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -436,7 +531,7 @@
           "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-6526-4-week-fbfit-and-fb30-all-exclusive-workout-videos-35-or-45-minutes-a-day-90ff.jpg",
         offer:"2 WEEK CHALLANGE 44 MIN/DAY",
         name: " FB 3-Day: 3 Workouts Per Week for 2 Weeks",
-        price: "$7.299",
+        price: "7.299",
         strikedoffprice: "2599",
       },
       {
@@ -450,6 +545,9 @@
  
 
     ]
+   
+    
+    let cartItems = JSON.parse(localStorage.getItem("cartProducts"))||[]
     localStorage.setItem('productData',JSON.stringify(productData))
    let storedproducts =JSON.parse(localStorage.getItem("productData"));
     console.log(storedproducts)
@@ -461,10 +559,10 @@
     let img =document.createElement('img');
     img.setAttribute('src',el.image_url)
 
-    let offer = document.createElement("p");
+    let offer = document.createElement("h6");
     offer.textContent=el.offer;
 
-    let name = document.createElement('h3');
+    let name = document.createElement('h6');
     name.textContent = el.name;
 
     let price = document.createElement('h4');
@@ -475,14 +573,65 @@
     
     let cartBtn = document.createElement('button')
     cartBtn.textContent = "Add to bag";
-    cartBtn.addEventListener('click',function(){
-      // we get the old cart items from local storage
-      let cart = JSON.parse(localStorage.getItem('cartItems'))||[];
-      cart.push(el)
-    })
+    cartBtn.setAttribute("class","btn btn-primary")
+    cartBtn.setAttribute("data-toggle","modal")
+    cartBtn.setAttribute("data-target","#exampleModal")
 
+    //let btn =document.getElementById("btn")
+    cartBtn.addEventListener("click",function(){
+        cartItems.push(el)
+     localStorage.setItem("cartProducts",JSON.stringify(cartItems))
+     })
+
+    // <button type="button"
+    //     class="btn btn-primary"
+    //     data-toggle="modal"
+    //     data-target="#exampleModal">
+    //     Add to bag 
+    // </button>
+  
+    //<!-- Modal -->
+       
+      //  cartBtn.addEventListener("click",() =>{
+      // let cartData = JSON.parse(localStorage.getItem("cart"));
+
+      //       if(cartData === null) cartData = [];
+
+      //       let isAdleadyInCart = false;
+      //       for(let i=0;i<cartData.length;i++){
+      //         if(cartData[i].id === el.id){
+      //           isAdleadyInCart = true;
+      //           break;
+      //         };
+      //       }
+      //      if(isAdleadyInCart === true){
+      //         alert("Product Already in Cart");
+      //       }else{
+      //       cartData.push({...el,quantity:1});
+      //       localStorage.setItem("cart",JSON.stringify(cartData));
+      //       alert("Product Added To Cart");
+      //       //window.location.href="cart.html"
+      //       }
+      //     })
     card.append(img,offer,name,price,cartBtn);
     parent.append(card)
  })
+ let filterSelect = document.querySelector("#filter");
+  //let fetchedData = []
+  filterSelect.addEventListener("change",function() {
+    console.log(filterSelect.value)
+  let filtered = fetchData.filter(function(element){
+    if(element.type === filterSelect.value){
+      return true;
+    }else{
+      return false;
+    }
+  })
+  console.log(filtered)
+  displayRes(filtered);
+  
+   })
+ 
+
 </script>
 </html>

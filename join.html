@@ -37,6 +37,7 @@
             font-size: 14px;
         }
 
+
         .f3 {
             width: 35%;
             display: flex;
@@ -151,6 +152,25 @@
         #footer-1 a {
             width: 10%;
         }
+        /* ul li a{
+            display: block;
+            padding: 20px 25px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+        ul li ul.dropdown li{
+            display: block;
+
+        }
+        ul li ul.dropdown{
+            width: 100%;
+            background:#22438c;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        } */
     </style>
 </head>
 <body>
@@ -162,22 +182,29 @@
         </div>
         <div class="f2">
             <div>WORKOUTS</div>
-            <div>PROGRAMS</div>
+           <a href="#"> <div>PROGRAMS </div></a>
+           <!-- <ul class="dropdown">
+             <li><a href="#">WORKOUT PROGRAM</a></li>
+             <li><a href="#">MEALS PLAN</a></li>
+             <li><a href="#">PILOTS PROGRAMS</a></li>
+             <li><a href="#">ROUTINES</a></li>
+            </ul> -->
+
             <div>HEALTHY LIVING</div>
             <div>COMMUNITY</div>
             <div>ABOUT</div>
             <div>STORE</div>
-            <div>MAMBERSHIP</div>
+           <a href="join.html"><div>MAMBERSHIP</div></a> 
         </div>
         <div class="f3">
-            <div><span>Hi! Sign In<br></span>MY FITNESS</div>
+            <a href="signin.html"><div><span>Hi! Sign In<br></span>MY FITNESS</div></a>
             <div>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB7CAMAAACBxRQ0AAAAY1BMVEX///8AAADv7+/6+vrS0tLV1dXk5OTf39/Y2Ni4uLjc3Nz39/ekpKQzMzMZGRny8vJvb2+SkpIlJSXLy8sPDw+Dg4Oenp5OTk5WVlaurq4dHR1kZGRBQUHBwcGMjIwrKyt5eXkkGQErAAAFC0lEQVRogcVb2aKqMAxkc0FF2RRBAf//Ky8e9VxlkjZtwTPPLWPTZJom1fOECFftLkurfl/6ftkk5+OpXiylk10QFKeq8RFln8arcFbmNk0I4hf2VTYb//qoYn7iXB9moG7PeuYHuqn3P+6l1HfcpqQvribUP6sPJqJepqbUA/p6Eu56b8E94OJu+8Bm2Q+UsSN3kVtzDzg6Rf3OhXrA1cH0N0du328iS+rQfrvfUFhxbyfh9v3Whnwibqu1XwSfzZNEIgLG7Gpfq251EYRPrOLsoozIcm3GrYqx8265HY8PItV5mxsdsxH/nW7DzAli/tC9GHAfWCuelKdVxNKf5OScs+nlMuKML3Y6ZsMrzuAfONGTE+EBv6KN3oGX0YjozOMom02ri/x8DOhdE6l8QU5diLk9RiSukpmUy+xXJtyed7S0XUxMawy5Pa8jvpJrZ4XUwo1s/gBleW1O2drZC7Al9OaqkwliTmbBPfg8sQrN0b4mfq8VN2lDjcQTbmrsbC8QeqHUyACvZJ0ttxdgoqHcQTRV73DjRZlXuhxayuAsBBwwbBUaG8DoxOmqj8ejwu4o63Zh9kIA1ZuKHwybVDreNCF4Gv6D1XisSe5FAXNBVme2YCXXG/4WnIjdxxX8TufiBtidtSVEucI9hIBPJtxIiAxh3qXAEozJxW42Huha1xgAes25O+ibRRIxBhzRXAIPkebOjdbkAghMNAE5+NGOGVjOQF5Lycfj9OmmHpAMS8nZmPwGef9N8vGe7ycgF+85nCsTkIu9HY6gCcghReDiHNRogoYBqCYn2XD+WRUPPwGVAk6ywUQuqesDWxAuLkUAz3TNoojrV8kVVxbjkY2wDMMDjMnmJ0uwkW21/BdQnrmxQyHWXFMZvCfzKSnExdWxNwlepLAl1mPs+gQvhKAcPX9TXMGl9uxEjneGm2I0JFJuLoeXXtUtBDIup1DHhSuuap63geEuu45lUOVS0EOs60FkOVF9EcDYsBb4ED+lqXsfQOR837A98wJRjNIVl4ii6dXqrkrYUJsf4M1ucBOLZjBVOE+1s6iKrXktbkO9sdCXE6mlG9eFiGKiTDLIQr3Z8YZn8x2SjDAg+zupwb4XJLfMepSfDkeMOJWl50ulku4O9bI6xYFrATeithxRlXqaXpDStYqnRDLbUU2eH+w0O7/BM/kdsrWTHv9ju5Pi50e6hv9elB2E/GOo/BaRiV1Qq1f9mCwqMS1VzxGuxzb42P7DaneRPRvLRacU375//oD0uIvjto3j7HYh45qBqGVDNdgmwZ+yy55vzMUue7JEN7PdIfP5tdHLRzn2IrUJxE8+DSFTWrxGTAOZ0haCl7YW2MvK6QdW6JVIarX05MJbYCFQ7RHKLvAiNXsjbCWEseE7zPRHxuh06v8PFDfHa4OoS1/eRDwF+IC8Nd9KnucN1szewkjDXho0cZaZ7s1zc4k/D/u1Zt9Nag/bdVZx218maYzaoTmaZUr7tv72dIZUI7nVG7pypTkgZEr7icOmiHdZ1nXZqW4jpVjq0pJ5/4qx0bwQtVi7ARaaeJ+gcaliVy9dllXOxd7My/63XqdRG/uCmwgLtc/PS67W+Sk6p0qovM7tMZAECq+zfvcmB6s27i9D7Nkr5y6WPXvylb/5eaTP51/Y8Cewc/itdd8x8nnXV2+G+FDa/LvcH0qbfG+/f9lfa6++ve47nj7fzfFPTj02Vz95v114/wASiDzLhwMflgAAAABJRU5ErkJggg=="
                     alt="">
             </div>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGA3xSOq_Bz09BWrC5qA3jGJF2ANFddjVXnXMPqbP0J36g-jExGH_Mxo3DMiNiWvCr28&usqp=CAU"
-                    alt="">
+               <a href="bag.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGA3xSOq_Bz09BWrC5qA3jGJF2ANFddjVXnXMPqbP0J36g-jExGH_Mxo3DMiNiWvCr28&usqp=CAU"
+                    alt=""></a>
             </div>
         </div>
     </div>
@@ -200,14 +227,14 @@
             <p>Get exclusive content and <br>
                 access to programs and challenges, with advanced features to help you reach <br>
                 and maintain your goals.</p>
-            <button>JOIN WITH PLUS</button>
+                <a href="signup.html"> <button>JOIN WITH PLUS</button></a> 
         </div>
         <div>
             <h1>Free Membership</h1>
             <p>Enjoy hundreds of workout videos, articles, and<br>
                  recipes, with new content every week. No strings<br> 
                  attached, no credit card required.</p>
-            <button>JOIN FOR FREE</button>
+               <a href="signup.html"><button>JOIN FOR FREE</button></a> 
         </div>
 
     </div>
